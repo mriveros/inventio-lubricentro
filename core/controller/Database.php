@@ -3,7 +3,7 @@ class Database {
 	public static $db;
 	public static $con;
 	function __construct(){
-		$this->user="smarthub";$this->pass="dev.mysql.";$this->host="srv.smarthub.com.py:54322";$this->ddbb="inventio-ferreteria";
+		$this->user="smarthub";$this->pass="dev.mysql.";$this->host="srv.smarthub.com.py:54322";$this->ddbb="inventio-aceite";
 	}
 
 	function connect(){

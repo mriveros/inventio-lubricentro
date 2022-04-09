@@ -23,7 +23,7 @@ $styleFirstRow = array('borderBottomColor' => '0000FF', 'bgColor' => 'AAAAAA');
 $table1 = $section1->addTable("table1");
 $table1->addRow();
 $table1->addCell()->addText("Id");
-$table1->addCell()->addText("RFC/RUT");
+$table1->addCell()->addText("RUC/CI");
 $table1->addCell()->addText("Nombre");
 $table1->addCell()->addText("Direccion");
 $table1->addCell()->addText("Email");

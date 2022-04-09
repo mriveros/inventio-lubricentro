@@ -45,7 +45,7 @@ for($i=$sd;$i<=$ed;$i+=(60*60*24)){
 $stock =StockData::getPrincipal();
 ?>
   <section class="content-header">
-    <h1>Inventio Hub: Ferretería</h1>
+    <h1>Inventio Hub: Centro de Lubricantes</h1>
     <h4>Almacen principal: <?php echo $stock->name;  ?></h4>
   </section>
 

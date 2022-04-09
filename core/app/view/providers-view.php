@@ -27,7 +27,7 @@
 <div class="box-body">
 			<table class="table table-bordered datatable table-hover">
 			<thead>
-			<th>RFC/RUT</th>
+			<th>RUC/CI</th>
 			<th>Nombre completo</th>
 			<th>Direccion</th>
 			<th>Email</th>
@@ -85,7 +85,7 @@ var doc = new jsPDF('p', 'pt');
         doc.text("Usuario: <?php echo Core::$user->name." ".Core::$user->lastname; ?>  -  Fecha: <?php echo date("d-m-Y h:i:s");?> ", 40, 90);
 var columns = [
     {title: "Id", dataKey: "id"}, 
-    {title: "RFC/RUT", dataKey: "no"}, 
+    {title: "RUC/CI", dataKey: "no"}, 
     {title: "Nombre completo", dataKey: "name"}, 
     {title: "Direccion", dataKey: "address"}, 
     {title: "Email", dataKey: "email"}, 

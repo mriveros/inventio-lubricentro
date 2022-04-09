@@ -366,9 +366,9 @@ $iva_calc = ($subtotal) *($iva_val/100);
     </div>
   </div>
   <div class="form-group">
-    <label for="inputEmail1" class="col-lg-2 control-label">RFC/RUT</label>
+    <label for="inputEmail1" class="col-lg-2 control-label">RUC/CI</label>
     <div class="col-md-8">
-      <input type="text" name="no" class="form-control" id="no" placeholder="RFC/RUT">
+      <input type="text" name="no" class="form-control" id="no" placeholder="RUC/CI">
     </div>
   </div>
   <div class="form-group">
