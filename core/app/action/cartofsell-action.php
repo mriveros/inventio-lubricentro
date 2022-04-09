@@ -377,7 +377,7 @@ $iva_calc=0;
 if(Core::$plus_iva){
   $iva_calc = ($subtotal) *($iva_val/100);
 }
-$total=$subtotal+$iva_calc;
+$total=$subtotal;
 ?>
 
       <input type="hidden" name="total" value="<?php echo $total; ?>" class="form-control" placeholder="Total">
@@ -424,7 +424,7 @@ $iva_calc = ($subtotal) *($iva_val/100);
 </tr>
 <tr>
   <td><p>Total</p></td>
-  <td><p><b><?php echo $symbol; ?> <?php echo number_format($subtotal+$iva_calc,2,'.',','); ?></b></p></td>
+  <td><p><b><?php echo $symbol; ?> <?php echo number_format($subtotal,2,'.',','); ?></b></p></td>
 </tr>
 
 </table>
