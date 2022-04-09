@@ -35,7 +35,7 @@ $sheet = $objPHPExcel->setActiveSheetIndex(0);
 
 $sheet->setCellValue('A1', 'Reporte de Clientes - Inventio Hub')
 ->setCellValue('A2', 'Id')
-->setCellValue('B2', 'RFC/RUT')
+->setCellValue('B2', 'RUC/CI')
 ->setCellValue('C2', 'Nombre completo')
 ->setCellValue('D2', 'Direccion')
 ->setCellValue('E2', 'Telefono')
