@@ -139,7 +139,7 @@ $clients = DData::getAll();
 		discount = $("#discount").val();
 		money = $("#money").val();
 		if(money<(<?php echo $total;?>-discount)){
-			alert("Efectivo insificiente!");
+			alert("Efectivo insuficiente!");
 			e.preventDefault();
 		}else{
 			if(discount==""){ discount=0;}
