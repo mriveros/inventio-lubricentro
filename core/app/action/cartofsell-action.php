@@ -469,7 +469,7 @@ $iva_calc = ($subtotal) *($iva_val/100);
     if(money!=""){
     if(p!=4){
 		if(money<(<?php echo $total;?>-discount)){
-			alert("Efectivo insificiente!");
+			alert("Efectivo insuficiente!");
 			e.preventDefault();
 		}else{
 			if(discount==""){ discount=0;}
