@@ -265,9 +265,9 @@ $clients = FData::getAll();
 $subtotal=$total-$discount;
 $iva_calc=0;
 if(Core::$plus_iva){
-  $iva_calc = ($subtotal) *($iva_val/100);
+  $iva_calc = ($subtotal) /(11);
 }
-$total=$subtotal+$iva_calc;
+$total=$subtotal;
 ?>
 
       <input type="hidden" name="total" value="<?php echo $total; ?>" class="form-control" placeholder="Total">
