@@ -297,7 +297,7 @@ $total=$subtotal+$iva_calc;
 
 </table>
 <?php elseif(Core::$plus_iva==1):
-$iva_calc = ($subtotal) *($iva_val/100);
+$iva_calc = ($subtotal) /(11);
   ?>
 <table class="table table-bordered">
 <tr>
@@ -314,7 +314,7 @@ $iva_calc = ($subtotal) *($iva_val/100);
 </tr>
 <tr>
   <td><p>Total</p></td>
-  <td><p><b><?php echo $symbol; ?> <?php echo number_format($subtotal+$iva_calc,2,'.',','); ?></b></p></td>
+  <td><p><b><?php echo $symbol; ?> <?php echo number_format($subtotal,2,'.',','); ?></b></p></td>
 </tr>
 
 </table>

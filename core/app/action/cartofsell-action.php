@@ -407,7 +407,7 @@ $total=$subtotal;
 
 </table>
 <?php elseif(Core::$plus_iva==1):
-$iva_calc = ($subtotal) *($iva_val/100);
+$iva_calc = ($subtotal) /(11);
   ?>
 <table class="table table-bordered">
 <tr>

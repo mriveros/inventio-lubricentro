@@ -4,6 +4,7 @@ class Database {
 	public static $con;
 	function __construct(){
 		$this->user="smarthub";$this->pass="dev.mysql.";$this->host="192.168.0.50:3306";$this->ddbb="inventio-aceite";
+		//$this->user="smarthub";$this->pass="Riveros200587!";$this->host="127.0.0.1:3306";$this->ddbb="inventio-aceite";
 	}
 
 	function connect(){
