@@ -95,10 +95,10 @@ if(count($products)>0){
 		</td>
       <?php endif;?>
 		<td><?php echo $product->name; ?></td>
-		<td><?php echo $currency; ?> <?php echo number_format($product->price_in,2,'.',','); ?></td>
-		<td><?php echo $currency; ?> <?php echo number_format($product->price_out,2,'.',','); ?></td>
-		<td><?php echo $currency; ?> <?php echo number_format($product->price_out2,2,'.',','); ?></td>
-		<td><?php echo $currency; ?> <?php echo number_format($product->price_out3,2,'.',','); ?></td>
+		<td><?php echo $currency; ?> <?php echo number_format($product->price_in,0,'.','.'); ?></td>
+		<td><?php echo $currency; ?> <?php echo number_format($product->price_out,0,'.','.'); ?></td>
+		<td><?php echo $currency; ?> <?php echo number_format($product->price_out2,0,'.','.'); ?></td>
+		<td><?php echo $currency; ?> <?php echo number_format($product->price_out3,0,'.','.'); ?></td>
 
 		<td><?php if($product->category_id!=null){echo $product->getCategory()->name;}else{ echo "<center>----</center>"; }  ?></td>
 		<td><?php echo $product->inventary_min; ?></td>
@@ -195,8 +195,8 @@ var rows = [
       "id": "<?php echo $product->id; ?>",
       "code": "<?php echo $product->code; ?>",
       "name": "<?php echo $product->name; ?>",
-      "price_in": "$ <?php echo number_format($product->price_in,2,'.',',');?>",
-      "price_out": "$ <?php echo number_format($product->price_out,2,'.',',');?>",
+      "price_in": "$ <?php echo number_format($product->price_in,0,'.','.');?>",
+      "price_out": "$ <?php echo number_format($product->price_out,0,'.','.');?>",
       },
  <?php endforeach; ?>
 ];

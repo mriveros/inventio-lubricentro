@@ -47,7 +47,7 @@ if(count($products)>0){
 		<th>Cliente</th>
 		<th>Pago</th>
 		<th>Entrega</th>
-    <th>$ Pendiente</th>
+    <th>Pendiente</th>
 		<th>Total</th>
 		<th>Fecha</th>
 		<th></th>
@@ -79,7 +79,7 @@ if($tx>=0){
 //$credit_array[] = array("sell_id"=>$sell->id,"total"=>$tx);
   $creditsum=$tx;
 }
-echo "<b> $";
+echo "<b>Gs.";
 echo number_format($creditsum,0,".",".");
 echo "</b>";
 ?>
