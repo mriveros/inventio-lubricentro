@@ -80,7 +80,7 @@ if($tx>=0){
   $creditsum=$tx;
 }
 echo "<b> $";
-echo number_format($creditsum,2,".",",");
+echo number_format($creditsum,0,".",".");
 echo "</b>";
 ?>
 </td>
@@ -92,7 +92,7 @@ $total= $sell->total-$sell->discount;
 		$product  = $operation->getProduct();
 		$total += $operation->q*$product->price_out;
 	}*/
-		echo "<b>".Core::$symbol." ".number_format($total,2,".",",")."</b>";
+		echo "<b>".Core::$symbol." ".number_format($total,0,".",".")."</b>";
 
 ?>			
 

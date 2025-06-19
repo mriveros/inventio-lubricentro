@@ -85,7 +85,7 @@ $pdf->Cell(5,$textypos,'-----------------------CLIENTE--------------------------
 $client=	PersonData::getById($sell->person_id);
 $textypos+=6;
 $pdf->setX(2);
-$pdf->Cell(5,$textypos,"NIT/RFC: ".strtoupper($client->no));
+$pdf->Cell(5,$textypos,"RUC: ".strtoupper($client->no));
 
 $textypos+=6;
 $pdf->setX(2);
@@ -123,7 +123,7 @@ if(Core::$plus_iva==0){
 $pdf->setX(2);
 $pdf->Cell(5,$off+6,"SUBTOTAL:  " );
 $pdf->setX(38);
-$pdf->Cell(5,$off+6,"$symbol ".number_format(($total)/(1 + ($iva_val/100) ),2,".",","),0,0,"R");
+$pdf->Cell(5,$off+6,"$symbol ".number_format(($total)/(1),2,".",","),0,0,"R");
 $pdf->setX(2);
 $pdf->Cell(5,$off+12,"DESCUENTO: " );
 $pdf->setX(38);
@@ -132,7 +132,7 @@ $pdf->Cell(5,$off+12,"$symbol ".number_format($sell->discount,2,".",","),0,0,"R"
 $pdf->setX(2);
 $pdf->Cell(5,$off+18,"IMPUESTO: " );
 $pdf->setX(38);
-$pdf->Cell(5,$off+18,"$symbol ".number_format(( ($total)/(1 + ($iva_val/100) )) *($iva_val/100),2,'.',','),0,0,"R");
+$pdf->Cell(5,$off+18,"$symbol ".number_format(( ($total)/11) *($iva_val/100),2,'.',','),0,0,"R");
 
 
 $pdf->setX(2);
@@ -142,11 +142,11 @@ $pdf->Cell(5,$off+5+18,"$symbol ".number_format($total,2,".",","),0,0,"R");
 }
 else if(Core::$plus_iva==1){
 	$total=$sell->total; 
-$iva_calc = ( ($total)/(1 + ($iva_val/100) )) *($iva_val/100);
+$iva_calc = ( ($total)/(11));
 $pdf->setX(2);
 $pdf->Cell(5,$off+6,"SUBTOTAL:  " );
 $pdf->setX(38);
-$pdf->Cell(5,$off+6,"$symbol ".number_format(($total+$sell->discount-$iva_calc),2,".",","),0,0,"R");
+$pdf->Cell(5,$off+6,"$symbol ".number_format(($total+$sell->discount),2,".",","),0,0,"R");
 $pdf->setX(2);
 $pdf->Cell(5,$off+12,"DESCUENTO: " );
 $pdf->setX(38);
